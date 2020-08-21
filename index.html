@@ -7,18 +7,19 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
     <link rel="stylesheet" href="assets/css/base.css">
     <link rel="stylesheet" href="assets/css/main.css">
+    <link rel="stylesheet" href="assets/css/grid.css">
+    <link rel="stylesheet" href="assets/css/responsive.css">
     <link rel="stylesheet" href="assets/fonts/font-awesome/css/font-awesome.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
 </head>
 <body>
     <div class="app">
         <header class="header">
-            <div class="grid">
-                <nav class="header_navbar">
+            <div class="grid wide">
+                <nav class="header_navbar hide-on-mobile-tablet">
                     <ul class="header_navbar-list">
                         <li class="header_navbar-item header_navbar-item--has-qr header_navbar-item--separate">
                             Vào cửa hàng trên ứng dụng VIETSOZ-Shop
-
                             <!-- Header QR code -->
                             <div class="header_qr">
                                 <img src="./assets/img/qr_code.png" alt="QR code" class="qr-img">
@@ -45,48 +46,53 @@
     
                     <ul class="header_navbar-list">
                         <li class="header_navbar-item header_navbar-item--has-notifi">
-                            <a href="" class="header_navbar-item-link"><i class="fa fa-bell-o"></i>Thông báo</a> 
+                            <a href="" class="header_navbar-item-link">
+                               <i class="fa fa-bell-o"></i>
+                               Thông báo
+                              </a> 
                             <div class="header_notifi">
-                                <header class="header_notifi-header">
+                                <div class="header_notifi-header">
                                     <h3>Thông báo mới nhận</h3>
-                                </header>
-                                <ul class="header_notifi-item header_notifi-item--viewed">
-                                    <a href="" class="header_notifi-link">
-                                        <img src="./assets/img/my-pham.jpg" alt="" class="header_notifi-img">
-                                        <div class="header_notifi-info">
-                                            <span class="header_notifi-name">Mỹ phẩm HS chính hãng</span>
-                                            <span class="header_notifi-descriotion">Mô tả mỹ phẩm HS chính hãng</span>
-                                        </div>
-                                    </a>
+                                </div>
+                                <ul class="header_notify-list">
+                                    <li class="header_notifi-item header_notifi-item--viewed">
+                                        <a href="" class="header_notifi-link">
+                                            <img src="./assets/img/my-pham.jpg" alt="" class="header_notifi-img">
+                                            <div class="header_notifi-info">
+                                                <span class="header_notifi-name">Mỹ phẩm HS chính hãng</span>
+                                                <span class="header_notifi-descriotion">Mô tả mỹ phẩm HS chính hãng</span>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li class="header_notifi-item header_notifi-item--viewed">
+                                        <a href="" class="header_notifi-link">
+                                            <img src="./assets/img/header_notifi-img2.png" alt="" class="header_notifi-img">
+                                            <div class="header_notifi-info">
+                                                <span class="header_notifi-name">8.8 bùng nổ - Lấy rổ hứng Voucher</span>
+                                                <span class="header_notifi-descriotion">Săn Voucher hoàn xu 100% đến 888k. Săn Voucher Freeship từ 0Đ.</span>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li class="header_notifi-item header_notifi-item--viewed">
+                                        <a href="" class="header_notifi-link">
+                                            <img src="./assets/img/header_notifi-img3.jpg" alt="" class="header_notifi-img">
+                                            <div class="header_notifi-info">
+                                                <span class="header_notifi-name">Quà bất ngờ</span>
+                                                <span class="header_notifi-descriotion">Mã Freeship đơn hàng bất kỳ đang chờ sẵn bạn trong ví</span>
+                                            </div>
+                                        </a>
+                                    </li>
                                 </ul>
-
-                                <ul class="header_notifi-item">
-                                    <a href="" class="header_notifi-link">
-                                        <img src="./assets/img/header_notifi-img2.png" alt="" class="header_notifi-img">
-                                        <div class="header_notifi-info">
-                                            <span class="header_notifi-name">8.8 bùng nổ - Lấy rổ hứng Voucher</span>
-                                            <span class="header_notifi-descriotion">Săn Voucher hoàn xu 100% đến 888k. Săn Voucher Freeship từ 0Đ.</span>
-                                        </div>
-                                    </a>
-                                </ul>
-                                
-                                <ul class="header_notifi-item">
-                                    <a href="" class="header_notifi-link">
-                                        <img src="./assets/img/header_notifi-img3.jpg" alt="" class="header_notifi-img">
-                                        <div class="header_notifi-info">
-                                            <span class="header_notifi-name">Quà bất ngờ</span>
-                                            <span class="header_notifi-descriotion">Mã Freeship đơn hàng bất kỳ đang chờ sẵn bạn trong ví</span>
-                                        </div>
-                                    </a>
-                                </ul>
-
-                                <footer class="header_notifi-footer">
+                                <div class="header_notifi-footer">
                                     <a href="" class="header_notifi-footer-btn">Xem tất cả</a>
-                                </footer>
+                                </div>
                             </div>
                         </li>
                         <li class="header_navbar-item">
-                            <a href="" class="header_navbar-item-link"><i class="fa fa-question-circle-o"></i>Trợ giúp</a> 
+                            <a href="" class="header_navbar-item-link">
+                                <i class="fa fa-question-circle-o"></i>
+                                Trợ giúp
+                            </a> 
                         </li>
                         <!-- <li class="header_navbar-item header_navbar-item--strong header_navbar-item--separate">Đăng ký</li>
                         <li class="header_navbar-item header_navbar-item--strong">Đăng nhập</li> -->
@@ -112,11 +118,65 @@
                     </ul>
                 </nav>
 
+                <input type="checkbox" hidden class="nav_input" id="nav-mobile-input"></input>
+
+				<div class="nav_mobile">
+					<ul class="nav_mobile-list">
+						<h3 class="category_heading">Danh mục</h3>
+						<ul class="category-list">				
+							<li class="category-item category-item--active">
+                                <a href="#" class="category-item_link">Thời trang nam</a>
+                            </li>
+                            <li class="category-item">
+                                <a href="./index.html" class="category-item_link">Thời trang nữ</a>
+                            </li>
+                            <li class="category-item">
+                                <a href="./index.html" class="category-item_link">Điện thoại & Phụ kiện</a>
+                            </li>
+                            <li class="category-item">
+                                <a href="./index.html" class="category-item_link">Thiết bị điện tử</a>
+                            </li>
+                           <li class="category-item">
+                               <a href="./index.html" class="category-item_link">Máy tính & Laptop</a>
+                           </li>
+                           <li class="category-item">
+                               <a href="./index.html" class="category-item_link">Đồng hồ</a>
+                           </li>
+                           <li class="category-item">
+                              <a href="./index.html" class="category-item_link">Túi ví</a>
+                          </li>
+                           <li class="category-item">
+                               <a href="./index.html" class="category-item_link">Mẹ và bé</a>
+                           </li>
+                           <li class="category-item">
+                               <a href="./index.html" class="category-item_link">Nhà cửa & Đời sống</a>
+                           </li>
+                           <li class="category-item">
+                               <a href="./index.html" class="category-item_link">Sức khỏe & Sắc đẹp</a>
+                           </li>
+						</ul>	
+					</ul>
+					<label for="nav-mobile-input" class="nav_mobile-close">
+						<i class="nav_mobile-close--icon fa fa-times"></i>
+					</label>
+				</div>
+
+				<label for="nav-mobile-input" class="nav_overlay"></label>
+
+
                 <!-- Header width search -->
                 <div class="header-with-search">
-                    <div class="header_logo">
+                    <label for="nav-mobile-input" class="mobile_menu-btn">
+						<i class="mobile_menu-icon fa fa-bars"></i>						
+					</label>
+                    <label for="mobile-search-checkbox" class="header_mobile-search">
+                        <i class="header_mobile-search-icon fa fa-search"></i>
+                    </label>
+                    <input type="checkbox" hidden class="header_search-checkbox" id="mobile-search-checkbox">
+                    
+                    <div class="header_logo hide-on-tablet">
                        <a href="./index.html" class="header_logo-link"> 
-                            <img src="./assets/img/logo.png" alt="">
+                            <img src="./assets/img/logo.png" alt="" class="header_logo-img">
                         </a>
                     </div>
 
@@ -233,14 +293,27 @@
                 </div>
 
             </div>
-
+            <ul class="header_sort-bar">
+                <li class="header_sort-item">
+                    <a href="" class="header_sort-link">Liên quan</a>
+                </li>
+                <li class="header_sort-item header_sort-item-active">
+                    <a href="" class="header_sort-link">Mới nhất</a>
+                </li>
+                <li class="header_sort-item">
+                    <a href="" class="header_sort-link">Bán chạy</a>
+                </li>
+                <li class="header_sort-item">
+                    <a href="" class="header_sort-link">Giá</a>
+                </li>
+            </ul>
         </header>
 
         <div class="app_container">
-           <div class="grid">
-            <div class="grid_row app_content">
-                <div class="grid_column-2">
-                 <nav class="category">
+           <div class="grid wide">
+            <div class="row sm-gutter app_content">
+                <div class="col l-2 m-0 c-0">
+                    <nav class="category">
                      <h3 class="category_heading">Danh Mục</h3>
      
                      <ul class="category-list">
@@ -275,11 +348,11 @@
                             <a href="#" class="category-item_link">Sức khỏe & Sắc đẹp</a>
                         </li>
                      </ul>
-                 </nav>
+                    </nav>
                 </div>
  
-                <div class="grid_column-10">
-                    <div class="home-filter">
+                <div class="col l-10 m-12 c-12">
+                    <div class="home-filter hide-on-mobile-tablet">
                         <span class="home-filter_label">Sắp xếp theo</span>
                         <button class="home-filter_btn btn">Phổ biến</button>
                         <button class="home-filter_btn btn btn--primary">Mới nhất</button>
@@ -313,10 +386,51 @@
                         </div>
                     </div>
                     
+                    <nav class="mobile-category">
+                        <ul class="mobile-category_list">
+                            <li class="mobile-category_item">
+                                <a href="" class="mobile-category_link">Tai nghe Bluetooth</a>
+                            </li>
+                            <li class="mobile-category_item">
+                                <a href="" class="mobile-category_link">Dụng cụ thiết bị da dụng</a>
+                            </li>
+                            <li class="mobile-category_item">
+                                <a href="" class="mobile-category_link">Tinh dầu</a>
+                            </li>
+                            <li class="mobile-category_item">
+                                <a href="" class="mobile-category_link">Balo</a>
+                            </li>
+                            <li class="mobile-category_item">
+                                <a href="" class="mobile-category_link">Khẩu trang y tế</a>
+                            </li>
+                            <li class="mobile-category_item">
+                                <a href="" class="mobile-category_link">Đồng hồ thông minh</a>
+                            </li>
+                            <li class="mobile-category_item">
+                                <a href="" class="mobile-category_link">Giày nữ</a>
+                            </li>
+                            <li class="mobile-category_item">
+                                <a href="" class="mobile-category_link">Máy ảnh - Máy quay phim</a>
+                            </li>
+                            <li class="mobile-category_item">
+                                <a href="" class="mobile-category_link">Đồ chơi cho bé</a>
+                            </li>
+                            <li class="mobile-category_item">
+                                <a href="" class="mobile-category_link">Bàn làm việc</a>
+                            </li>
+                            <li class="mobile-category_item">
+                                <a href="" class="mobile-category_link">Đầm dạ tiệc</a>
+                            </li>
+                            <li class="mobile-category_item">
+                                <a href="" class="mobile-category_link">Cây lau nhà</a>
+                            </li>
+                        </ul>
+                    </nav>
+
                     <div class="home-product">
-                        <div class="grid_row">
+                        <div class="row sm-gutter">
                             <!-- Product item -->
-                            <div class="grid_column-2-4">
+                            <div class="col l-2-4 m-4 c-6">
                                 <a class="home-product-item" href="#">
                                     <img src="./assets/img/product_1.jpg" alt="" class="home-product-item_img">
                                     <h4 class="home-product-item_name">Quần âu nam trơn dáng ôm vải chống nhăn chống xù, quần tây nam hàn quốc nhiều màu lựa chọn</h4>
@@ -354,7 +468,7 @@
                                 </a>
                                 
                             </div>
-                            <div class="grid_column-2-4">
+                            <div class="col l-2-4 m-4 c-6">
                                 <a class="home-product-item" href="#">
                                     <img src="./assets/img/product_2.jpg" alt="" class="home-product-item_img">
                                     <h4 class="home-product-item_name">Áo khoác nữ thời trang tay dài phối 3 sọc</h4>
@@ -392,7 +506,7 @@
                                 </a>
                                 
                             </div>
-                            <div class="grid_column-2-4">
+                            <div class="col l-2-4 m-4 c-6">
                                 <a class="home-product-item" href="#">
                                     <img src="./assets/img/product_3.jpg" alt="" class="home-product-item_img">
                                     <h4 class="home-product-item_name">Tay cầm chơi Game X3/T3 có Bluetooth cho Smartphone, PC, Laptop, Android, IOS, Windows có giá kẹp điện thoại</h4>
@@ -430,7 +544,7 @@
                                 </a>
                                 
                             </div>
-                            <div class="grid_column-2-4">
+                            <div class="col l-2-4 m-4 c-6">
                                 <a class="home-product-item" href="#">
                                     <img src="./assets/img/product_4.jpg" alt="" class="home-product-item_img">
                                     <h4 class="home-product-item_name">Tai nghe Bluetooth 5.0 AIR PRO (định vị đổi tên) loa Super Bass nghe rất hay</h4>
@@ -468,7 +582,7 @@
                                 </a>
                                 
                             </div>
-                            <div class="grid_column-2-4">
+                            <div class="col l-2-4 m-4 c-6">
                                 <a class="home-product-item" href="#">
                                     <img src="./assets/img/product_5.jpg" alt="" class="home-product-item_img">
                                     <h4 class="home-product-item_name">Laptop HP Notebook 15-DA0404TU (Intel Pentinum/500GB HHD/8DT50PA)- Hàng chính hãng</h4>
@@ -506,7 +620,7 @@
                                 </a>
                                 
                             </div>
-                            <div class="grid_column-2-4">
+                            <div class="col l-2-4 m-4 c-6">
                                 <a class="home-product-item" href="#">
                                     <img src="./assets/img/product_6.jpg" alt="" class="home-product-item_img">
                                     <h4 class="home-product-item_name">Đồng hồ nam dây da Casio chính hãng Anh Khuê MTP-1374L-1AVDF</h4>
@@ -544,10 +658,10 @@
                                 </a>
                                 
                             </div>
-                            <div class="grid_column-2-4">
+                            <div class="col l-2-4 m-4 c-6">
                                 <a class="home-product-item" href="#">
                                     <img src="./assets/img/product_7.jpg" alt="" class="home-product-item_img">
-                                    <h4 class="home-product-item_name">Bồn cầu cho bé hình cá PAPA nhập khẩu Thái Lan - Bô vệ sinh tay cầm USEA05</h4>
+                                    <h4 class="home-product-item_name">Bồn cầu cho bé hình PAPA nhập khẩu Thái Lan - Bộ vệ sinh tay cầm</h4>
                                     <div class="home-product-item_price">
                                         <span class="home-product-item_price-old">250.000đ</span>
                                         <span class="home-product-item_price-current">188.000đ</span>
@@ -581,7 +695,7 @@
 
                                 </a>
                                 
-                            </div>  <div class="grid_column-2-4">
+                            </div>  <div class="col l-2-4 m-4 c-6">
                                 <a class="home-product-item" href="#">
                                     <img src="./assets/img/product_8.jpg" alt="" class="home-product-item_img">
                                     <h4 class="home-product-item_name">Đồng hồ nữ dây nhựa Casio chính hãng Anh Khuê LRW-200H (12 màu sắc)</h4>
@@ -619,7 +733,7 @@
                                 </a>
                                 
                             </div>
-                            <div class="grid_column-2-4">
+                            <div class="col l-2-4 m-4 c-6">
                                 <a class="home-product-item" href="#">
                                     <img src="./assets/img/product_9.jpg" alt="" class="home-product-item_img">
                                     <h4 class="home-product-item_name">Hộp bảo quản thực phẩm khô BioZone 500ml</h4>
@@ -657,7 +771,7 @@
                                 </a>
                                 
                             </div>
-                            <div class="grid_column-2-4">
+                            <div class="col l-2-4 m-4 c-6">
                                 <a class="home-product-item" href="#">
                                     <img src="./assets/img/product_10.jpg" alt="" class="home-product-item_img">
                                     <h4 class="home-product-item_name">COMBO 3 lọ hoa sứ siêu xinh - Gốm sứ Bát Tràng - Bình hoa tràng trí - Decor nhà cửa</h4>
@@ -695,7 +809,7 @@
                                 </a>
                                 
                             </div>
-                            <div class="grid_column-2-4">
+                            <div class="col l-2-4 m-4 c-6">
                                 <a class="home-product-item" href="#">
                                     <img src="./assets/img/product_11.jpg" alt="" class="home-product-item_img">
                                     <h4 class="home-product-item_name">CHO XEM HÀNG _ Nhiệt kế hồng ngoại màn hình LCD đo nhiệt độ qua trán không cần tiếp xúc</h4>
@@ -733,7 +847,7 @@
                                 </a>
                                 
                             </div>
-                            <div class="grid_column-2-4">
+                            <div class="col l-2-4 m-4 c-6">
                                 <a class="home-product-item" href="#">
                                     <img src="./assets/img/product_12.png" alt="" class="home-product-item_img">
                                     <h4 class="home-product-item_name">Bộ sản phẩm chống nắng và giảm mụn toàn diện La Roche Posay</h4>
@@ -771,7 +885,7 @@
                                 </a>
                                 
                             </div>
-                            <div class="grid_column-2-4">
+                            <div class="col l-2-4 m-4 c-6">
                                 <a class="home-product-item" href="#">
                                     <img src="./assets/img/product_13.jpg" alt="" class="home-product-item_img">
                                     <h4 class="home-product-item_name">Túi tote vải đeo chéo canvas bag giá rẻ đẹp đi học TX337</h4>
@@ -809,7 +923,7 @@
                                 </a>
                                 
                             </div>
-                            <div class="grid_column-2-4">
+                            <div class="col l-2-4 m-4 c-6">
                                 <a class="home-product-item" href="#">
                                     <img src="./assets/img/product_14.jpg" alt="" class="home-product-item_img">
                                     <h4 class="home-product-item_name">Balo Nữ 💥 FREESHIP 50K 💥 Balo nữ mini chuẩn hãng FOREVER YOUNG chất da cực mềm mịn BL02</h4>
@@ -847,7 +961,7 @@
                                 </a>
                                 
                             </div>
-                            <div class="grid_column-2-4">
+                            <div class="col l-2-4 m-4 c-6">
                                 <a class="home-product-item" href="#">
                                     <img src="./assets/img/product_15.jpg" alt="" class="home-product-item_img">
                                     <h4 class="home-product-item_name">[DA BÒ THẬT] Ví nam mini, nhỏ gọn, bền bỉ</h4>
@@ -881,9 +995,7 @@
                                         <span class="home-product-item_sale-off-percent">44%</span>
                                         <span class="home-product-item_sale-off-label">GIẢM</span>
                                     </div>
-
                                 </a>
-                                
                             </div>
                         </div>
                     </div>
@@ -927,9 +1039,9 @@
         </div>
 
         <footer class="footer">
-            <div class="grid">
-                <div class="grid_row">
-                    <div class="grid_column-2-4">
+            <div class="grid wide">
+                <div class="row">
+                    <div class="col l-2-4 m-4 c-6">
                         <h3 class="footer_heading">Chăm sóc khách hàng</h3>
                         <ul class="footer_list">
                             <li class="footer_item">
@@ -943,7 +1055,7 @@
                             </li>
                         </ul>
                     </div>
-                    <div class="grid_column-2-4">
+                    <div class="col l-2-4 m-4 c-6">
                         <h3 class="footer_heading">Giới thiệu</h3>
                         <ul class="footer_list">
                             <li class="footer_item">
@@ -957,8 +1069,7 @@
                             </li>
                         </ul>
                     </div>
-
-                    <div class="grid_column-2-4">
+                    <div class="col l-2-4 m-4 c-6">
                         <h3 class="footer_heading">Danh mục</h3>
                         <ul class="footer_list">
 							<li class="footer-item">
@@ -987,8 +1098,7 @@
 							</li>
 						</ul>	
                     </div>
-
-                    <div class="grid_column-2-4">
+                    <div class="col l-2-4 m-4 c-6">
                         <h3 class="footer_heading">Theo dõi</h3>
                         <ul class="footer_list">
                             <li class="footer_item">
@@ -1011,8 +1121,7 @@
                             </li>
                         </ul>
                     </div>
-
-                    <div class="grid_column-2-4">
+                    <div class="col l-2-4 m-8 c-12">
                         <h3 class="footer_heading">Vào cửa hàng trên ứng dụng</h3>
                         <div class="footer_download">
                             <img src="./assets/img/qr_code.png" alt="Download QR" class="footer_download-qr">
@@ -1027,12 +1136,13 @@
                         </div>
                     </div>
                 </div>
-                <div class="copyright">
-                    <p class="footer_text">© 2020 - Bản quyền thuộc về công ty VietSoz</p>
-                </div>
             </div>
         </footer>
-
+        <div class="copyright">
+            <div class="grid wide">
+                <p class="footer_text">© 2020 - Bản quyền thuộc về công ty VietSoz</p>
+            </div>
+        </div>
     </div>
 
     <!-- <div class="modal">
